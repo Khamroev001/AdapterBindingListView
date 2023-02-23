@@ -196,7 +196,7 @@ class MainActivity : AppCompatActivity() {
                 "Algeria",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/algeria",
                 "Algeria is a country at the Mediterranean coast in northern Africa. The land has a total area of 2,381,740 km² (919,594 mi²) " +
                         "and a total coastline of 998 km (620.1 mi). This land area is approximately 342% of the area of Texas. Algeria is thus " +
                         "the largest country in Africa and the tenth largest country in the world. A considerable share of the inhabitants (74%) " +
@@ -209,7 +209,7 @@ class MainActivity : AppCompatActivity() {
                 "Democratic Respublic of Congo",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/congo",
                 "The Democratic Republic of the Congo is a country in the middle of Central Africa " +
                         "with only a narrow access to the Atlantic. The land has a total area of 2,344,860 km² " +
                         "(905,355 mi²) and a total coastline of 37 km (23.0 mi). This land area is approximately " +
@@ -224,7 +224,7 @@ class MainActivity : AppCompatActivity() {
                 "Greenland",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/greenland",
                 "Greenland is an island state in the northern Atlantic Ocean at the Arctic Ocean. " +
                         "The land has a total area of 2,166,000 km² (836,297 mi²) and a total coastline of " +
                         "44,087 km (27,394.4 mi). This land area is approximately 311% of the area of Texas. " +
@@ -243,7 +243,7 @@ class MainActivity : AppCompatActivity() {
                 "Mexico",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/mexico",
                 "  Mexico is a country south of the US and separates the Atlantic from the Pacific. The land has a total area of 1,964,375 km² (758,449 mi²) and a total coastline of 9,330 km (5,797.4 mi). This land area is approximately 282% of the area of Texas. Mexico is thus one of the largest countries in the Americas and the 14th biggest in the world. An exceptionally high proportion of residents (81%) belongs to the urban population.\n" +
                         "Mexico is comparatively high at an average elevation of 1111 meters above sea level. The highest mountain peak (Citlaltépetl) is at 5,636 meters. The country has about 70 islands. There are direct national borders with the three neighboring countries Belize, Guatemala and the United States. The distance between New York City and the Capital Mexico City is about 3,370 km (2,094 mi).\n"
             )
@@ -254,7 +254,7 @@ class MainActivity : AppCompatActivity() {
                 "Saudi Arabia",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/sau",
                 "Saudi Arabia is a country on the Arabian Peninsula between the Red Sea and the Persian Gulf. The land has a total area of 2,149,690 km² (829,999 mi²) and a total coastline of 2,640 km (1,640.4 mi). This land area is approximately 309% of the area of Texas. Saudi Arabia is thus one of the largest countries in Asia and the 13th biggest in the world. An exceptionally high proportion of residents (85%) belongs to the urban population. More than every fifth resident lives in Riyadh.\n"
             )
         )
@@ -264,7 +264,7 @@ class MainActivity : AppCompatActivity() {
                 "Indonesia",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/indonesia",
                 "Indonesia is an archipelago between the Pacific and the Indian Ocean. The land has a total area of 1,913,580 km² (738,837 mi²) and a total coastline of 54,716 km (33,998.9 mi). This land area is approximately 275% of the area of Texas. Indonesia is thus one of the largest countries in Asia and the 15th biggest in the world. More than half of all residents (57%) live within cities."
             )
         )
@@ -274,7 +274,7 @@ class MainActivity : AppCompatActivity() {
                 "Sudan",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/sudan",
                 "Sudan is a country in northeastern Africa at the Red Sea. The land has a total area of 1,879,358 km² (725,623 mi²) and a total coastline of 853 km (530.0 mi). This land area is approximately 270% of the area of Texas. In terms of area, Sudan is the third largest country in Africa after Algeria and the Congo (Dem. Republic) and the 16th largest in the world. Most of the population (64%) resides within rural regions.\n"
             )
         )
@@ -284,7 +284,7 @@ class MainActivity : AppCompatActivity() {
                 "Libya",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/libya",
                 "Libya is a country at the Mediterranean coast of North Africa. The land has a total area of 1,759,540 km² (679,362 mi²) and a total coastline of 1,770 km (1,099.8 mi). This land area is approximately 253% of the area of Texas. Libya is thus one of the largest countries in Africa and the 17th biggest in the world. With 3.8 inhabitants per km² it is one of the most sparsely populated countries on earth. An exceptionally high proportion of residents (81%) belongs to the urban population. Around one in six residents lives in Tripoli alone."
             )
         )
@@ -294,7 +294,7 @@ class MainActivity : AppCompatActivity() {
                 "Iran",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/ir",
                 " Iran is a country between the Persian Gulf and the Caspian Sea. The land has a total area of 1,745,150 km² (673,806 mi²) and a total coastline of 2,440 km (1,516.1 mi). This land area is approximately 251% of the area of Texas. Iran is thus one of the largest countries in Asia and the 18th biggest in the world. A considerable share of the inhabitants (76%) belongs to the urban population. Every tenth inhabitant lives in Tehran alone."
             )
         )
@@ -304,7 +304,7 @@ class MainActivity : AppCompatActivity() {
                 "Mongoliya",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/kz",
+                "https://countryflagsapi.com/png/mongolia",
                 "Mongolia is a landlocked country in eastern Central Asia between Russia and China. The land has a total area of 1,564,120 km² (603,910 mi²). This land area is approximately 225% of the area of Texas. Mongolia is thus one of the largest countries in Asia and the 19th biggest in the world. With 2.1 inhabitants per km² it is also the most sparsely populated country in Asia. More than half of all residents (69%) live within cities. Around every second resident lives in Ulaanbaatar."
             )
         )
