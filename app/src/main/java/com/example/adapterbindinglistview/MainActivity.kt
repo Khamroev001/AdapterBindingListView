@@ -3,13 +3,9 @@ package com.example.adapterbindinglistview
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.ArrayAdapter
 import com.example.adapterbindinglistview.adapter.CountryAdapter
-import com.example.adapterbindinglistview.adapter.UserAdapter
 import com.example.adapterbindinglistview.databinding.ActivityMainBinding
 import com.example.adapterbindinglistview.model.country.Country
-import com.example.adapterbindinglistview.model.user.User
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,9 +19,21 @@ class MainActivity : AppCompatActivity() {
 
         val countries = mutableListOf<Country>()
 
+
+
+
         countries.add(
             Country(
-                "Russia", "143400000", "474.5 km^2", "https://countryflagsapi.com/png/ru", "" +
+                "Uzbekistan", "34,915,000", "447,400 km²", "https://countryflagsapi.com/png/uz", "" +
+                        "Uzbekistan is a landlocked country in Central Asia. The land has a total area of 447,400 km² (172,742 mi²). This land area is approximately 111% of the area of California. Uzbekistan is thus one of the largest countries in Asia and the 57th biggest in the world. More than half of all residents (50%) live within cities.\n" +
+                        "The highest mountain peak (Hazrat Sulton in the Hissar Mountains) is at 4,643 meters. There is no access to the open sea. There are direct national borders with the five neighboring countries Afghanistan, Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan. The distance between New York City and the Capital Tashkent is about 10,190 km (6,332 mi)."
+            )
+        )
+
+
+        countries.add(
+            Country(
+                "Russia", "143400000", "17 100 000 км²", "https://countryflagsapi.com/png/ru", "" +
                         "Russia is a country in Eastern Europe and Northern Asia. \n" +
                         "The territorial state has a size of over 17 million km² and a total coastal length of 37,653 km. \n" +
                         "This land mass is almost 48 times the size of Germany. Russia is thus the largest country in the world in terms of area, \n" +
@@ -41,12 +49,15 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
+
+
+
         countries.add(
             Country(
                 "Antarctica",
                 "143400000",
                 "474.5 km^2",
-                "https://countryflagsapi.com/png/uz",
+                "https://countryflagsapi.com/png/aq",
                 "Antarctica, the southernmost continent and site of the South Pole, is a virtually uninhabited, ice-covered landmass. \n" +
                         "Most cruises to the continent visit the Antarctic Peninsula, which stretches toward South America. It’s known for \n" +
                         "the Lemaire Channel and Paradise Harbor, striking, iceberg-flanked passageways, and Port Lockroy, a former British \n" +
