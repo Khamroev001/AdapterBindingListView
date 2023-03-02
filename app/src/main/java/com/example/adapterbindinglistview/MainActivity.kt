@@ -3,6 +3,8 @@ package com.example.adapterbindinglistview
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.adapterbindinglistview.adapter.CountryAdapter
 import com.example.adapterbindinglistview.databinding.ActivityMainBinding
 import com.example.adapterbindinglistview.model.country.Country
@@ -322,15 +324,11 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
+        var manager=GridLayoutManager(this,2)
 
-        val arrayAdapter = CountryAdapter(this, countries)
-        binding.lv.adapter = arrayAdapter
+        val arrayAdapter = CountryAdapter(countries)
+        binding.rv.adapter = arrayAdapter
+        binding.rv.layoutManager=manager
 
-        binding.lv.setOnItemClickListener { adapterView, view, i, l ->
-            var intent = Intent(this, CountryDetail::class.java)
-
-            intent.putExtra("country", countries[i])
-            startActivity(intent)
         }
     }
-}

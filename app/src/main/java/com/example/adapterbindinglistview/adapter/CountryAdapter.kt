@@ -6,39 +6,38 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.adapterbindinglistview.R
 import com.example.adapterbindinglistview.databinding.CountryItemBinding
-import com.example.adapterbindinglistview.databinding.ListItemBinding
 import com.example.adapterbindinglistview.model.country.Country
 
-class CountryAdapter(context: Context, var countries: MutableList<Country>) :
-    ArrayAdapter<Country>(context, R.layout.list_item, countries) {
+class CountryAdapter(var countries:MutableList<Country>):RecyclerView.Adapter<CountryAdapter.MyHolder>(){
 
-    override fun getCount(): Int {
+   inner class MyHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+       var countryName:TextView=itemView.findViewById(R.id.country_name)
+       var countryArea:TextView=itemView.findViewById(R.id.country_area)
+       var countryPopulation:TextView=itemView.findViewById(R.id.country_population)
+       var img:ImageView=itemView.findViewById(R.id.img)
+   }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {
+        return MyHolder(LayoutInflater.from(parent.context).inflate(R.layout.country_item,parent,false))
+    }
+
+    override fun onBindViewHolder(holder: MyHolder, position: Int) {
+        var country:Country=countries[position]
+
+        holder.countryName.text=country.countryName
+        holder.countryArea.text=country.area
+        holder.countryPopulation.text=country.population
+        holder.img.load(country.imgUrl)
+    }
+
+    override fun getItemCount(): Int {
         return countries.size
     }
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val countryItem: CountryItemBinding
-        if (convertView == null) {
-            countryItem = CountryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-            Log.d("TAG", "create: $position")
-        }
-        else {
-            countryItem = CountryItemBinding.bind(convertView)
-            Log.d("TAG", "update: $position")
-        }
-
-        val country = countries[position]
-
-        countryItem.countryName.text = country.countryName
-        countryItem.countryArea.text = "Area: ${country.area}"
-        countryItem.countryPopulation.text = "Population: ${country.population}"
-        countryItem.img.load(country.imgUrl) {
-            placeholder(R.drawable.empty)
-        }
-
-        return countryItem.root
-    }
 }
